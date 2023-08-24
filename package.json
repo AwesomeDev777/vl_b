@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "CRM_backend",
   "main": "server.JS",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
