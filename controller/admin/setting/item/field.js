@@ -1,4 +1,4 @@
-const ItemField = require("../../../../model/admin/setting/item/itemField");
+const ItemField = require("../../../../model/admin/setting/item/ItemField");
 const validateItemField = require("../../../../validation/admin/setting/validateItemField")
 
 exports.add = (req, res) => {
