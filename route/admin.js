@@ -54,6 +54,7 @@ const router = express.Router();
 
 // Auth Route
 router.post("/admin/login", auth.login);
+router.post("/admin/signup", staffController.add);
 router.get("/admin/current", passport.authenticate('jwt', {session: false}), auth.current);
 
 // Role Route
