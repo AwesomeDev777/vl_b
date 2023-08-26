@@ -8,12 +8,8 @@ module.exports = function validateProduct(data){
     data.bin_location = !isEmpty(data.bin_location) ? data.bin_location : '';
     if(Validator.isEmpty(data.code)){
         errors.code = 'Code field is required';
-    }else{
-        if((data.code.length < 6) || (data.code.length > 30))
-        {
-            errors.code = 'The length of Code must be between 6 and 30';
-        }
     }
+    
     if(Validator.isEmpty(data.name)){
         errors.name = 'Name field is required';
     }else{
